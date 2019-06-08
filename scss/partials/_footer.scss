@@ -1,0 +1,48 @@
+footer {
+  width: 100%;
+  box-shadow: $grey-shadow2;
+
+  .container_Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 89px;
+
+    .footerLogo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .footerLogoWord {
+        color: $azure-dark;
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+        width: auto;
+        margin-bottom: 6.52px;
+      }
+
+      .footerDescription {
+        font-size: 11px;
+        color: $greyish;
+      }
+    }
+
+    .footerIcons {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .twitter {
+
+      }
+
+      .facebook {
+        margin-left: 20px;
+      }
+    }
+  }
+}

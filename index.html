@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>My First Project</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script defer src="./js/app.js"></script>
 </head>
-
 <body>
 
 <nav>
-    <div class="container">
+    <div class="container navContainer">
         <h1 class="logoWord">shopabc.pl</h1>
         <ul class="menuList">
             <li><a href="#">Dlaczego my</a></li>
@@ -28,25 +34,23 @@
         <a href="#">Otwórz swój sklep</a>
     </div>
 </header>
-<section class="sectionOne">
-    <div class="container">
-        <h3>Najpopularniejsza platforma sprzedażowa w kraju</h3>
-        <div class="content">
-            <div>
-                <img alt="Person" src="images/icons/Person.svg"/>
-                <p>100000+</p>
-                <p>wizyt dziennie</p>
-            </div>
-            <div>
-                <img alt="Eye" src="images/icons/Eye.svg"/>
-                <p>2000000+</p>
-                <p>obejrzanych każdego dnia produktów</p>
-            </div>
-            <div>
-                <img alt="Catalog" src="images/icons/Catalog.svg"/>
-                <p>10000+</p>
-                <p>dodawanych <br>wpisów dziennie</p>
-            </div>
+<section class="sectionOne container">
+    <h3>Najpopularniejsza platforma sprzedażowa w kraju</h3>
+    <div class="content">
+        <div>
+            <img alt="Person" src="images/icons/Person.svg"/>
+            <p>100000+</p>
+            <p>wizyt dziennie</p>
+        </div>
+        <div>
+            <img alt="Eye" src="images/icons/Eye.svg"/>
+            <p>2000000+</p>
+            <p>obejrzanych każdego dnia produktów</p>
+        </div>
+        <div>
+            <img alt="Catalog" src="images/icons/Catalog.svg"/>
+            <p>10000+</p>
+            <p>dodawanych <br>wpisów dziennie</p>
         </div>
     </div>
 </section>
@@ -128,36 +132,101 @@
         </div>
     </div>
 </section>
+<section class="calculatorMain ">
+    <div class="calculator container">
+        <h3>Oblicz ile zapłacisz</h3>
+        <div class="calculatorElements">
+            <div class="calculatorElementsLeft">
+                <form class="calculatorForm">
+                    <label><input name="productsQuantity" id="productsQuantity" placeholder="Ilość produktów" type="text"></label>
+                    <label><input name="orderQuantity" id="orderQuantity" placeholder="Szacowana ilość zamówień w miesiącu"
+                           type="text"></label>
+                    <label><input name="selectPackage" id="selectPackage" placeholder="Wybierz pakiet" type="text"></label>
+                    <div class="selectPackageSelectorMain">
+                        <label> <input name="selectPackageSelectorDown" class="selectPackageSelectorDown" id="selectPackageSelectorDown" placeholder="" type="button"></label>
+                            <label><input name="selectPackageSelectorUp" class="selectPackageSelectorUp none" id="selectPackageSelectorUp" placeholder="" type="button"></label>
+                    </div>
+                    <ul class="calculatorFormSelect none">
+                        <li class="basic">Podstawowy</li>
+                        <li class="pro">Profesjonalny</li>
+                        <li class="premium">Premium</li>
+                    </ul>
+                    <label class="CheckboxLabel"><input type="checkbox" class="Checkbox" checked>Obsługa księgowa<span
+                            class="customCheckbox"></span>
+                    </label>
+                    <label class="CheckboxLabel"><input type="checkbox" class="Checkbox" checked>Wynajem terminala
+                        płatniczego<span class="customCheckbox"></span>
+                    </label>
+                </form>
+            </div>
+            <div class="calculatorElementsRight">
+                <div class="priceBar">
+                    <span>Produkty</span>
+                    <span id="productsPrice"></span>
+                    <span id="productsSum"></span>
+                </div>
+                <div class="priceBar">
+                    <span>Zamówienia</span>
+                    <span id="ordersPrice"></span>
+                    <span id="ordersSum"></span>
+                </div>
+                <div class="priceBar">
+                    <span>Pakiet</span>
+                    <span id="package"></span>
+                    <span id="packagePrice"></span>
+                </div>
+                <div class="priceBar">
+                    <span>Ksiegowość</span>
+                    <span>$35</span>
+                </div>
+                <div class="priceBar">
+                    <span>Terminal</span>
+                    <span>$5</span>
+                </div>
+                <div class="sumPriceBar">
+                    <span>Suma</span>
+                    <span id="priceSum">$0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 <section>
     <div class="container container_lastSection">
         <div class="lastSection_left">
             <h2>Masz pytania?</h2>
-            <span>Zostaw dla nas swój adres mailowy, lub zadzwoń!</span>
+            <span class="lastSectionDescription">Zostaw dla nas swój adres mailowy, lub zadzwoń!</span>
             <div class="left_information">
-                <span>info@shopabc.pl</span>
-                <span>123 456 789</span>
+                <span class="mailInfo"><img alt="Eye" src="images/icons/Mail%20Icon.svg"/> info@shopabc.pl</span>
+                <span class="phoneInfo"><img alt="Eye" src="images/icons/Phone%20Icon.svg"/> 123 456 789</span>
             </div>
         </div>
         <div class="lastSection_right">
-            <form>
-                <label>Imię i nazwisko
-                    <input type="text" value="" placeholder="">
-                </label>
-                <label>E-mail
-                    <input type="text" value="" placeholder="">
-                </label>
-                <label><input type="checkbox" checked>Wyrażam zgodę na przetwarzanie danych i kontakt.
-                </label>
-                <a href="#" class="sendButton">Wyślij</a>
-            </form>
+            <label class="nameLabel">Imię i nazwisko
+            <input type="text" value="" placeholder=""></label>
+
+            <label class="mailLabel">E-mail
+            <input type="text" value="" placeholder=""></label>
+
+            <label class="CheckboxLabel"><input type="checkbox" class="Checkbox" checked>Wyrażam
+                zgodę na przetwarzanie danych i kontakt.<span class="customCheckbox"></span>
+            </label>
+            <a href="#" class="sendButton">Wyślij</a>
         </div>
     </div>
 </section>
 <footer>
-    <div class="container">
-
+    <div class="container container_Footer">
+        <div class="footerLogo">
+            <span class="footerLogoWord">shopabc.pl</span>
+            <span class="footerDescription">© 2019 Wszystkie prawa zastrzeżone</span>
+        </div>
+        <div class="footerIcons">
+            <a class="twitter" href="https://twitter.com/"><img alt="Twitter link" src="./images/icons/Twitter.svg"/></a>
+            <a class="facebook" href="https://www.facebook.com/"><img alt="Facebook link" src="./images/icons/Facebook.svg"/></a>
+        </div>
     </div>
 </footer>
-
-
 </body>
+</html>

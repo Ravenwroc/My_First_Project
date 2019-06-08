@@ -1,0 +1,105 @@
+.container_lastSection {
+  width: 100%;
+  max-width: 896px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  position: relative;
+
+
+  .lastSection_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 163px;
+    margin-right: 91px;
+
+    h2 {
+      margin-bottom: 22px;
+    }
+
+    .lastSectionDescription {
+      font-family: "Open Sans", serif;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 42px;
+
+    }
+
+    .left_information {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+
+      .mailInfo, .phoneInfo {
+        position: relative;
+
+        img {
+          transform: translateY(10px);
+        }
+      }
+
+      .mailInfo {
+        margin-right: 34.41px;
+      }
+    }
+  }
+
+
+  .lastSection_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 440px;
+
+    .nameLabel {
+      font-family: "Open Sans", serif;
+      font-weight: bold;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2.98px;
+      color: $azure-dark;
+    }
+
+    .mailLabel {
+      font-family: "Open Sans", serif;
+      font-weight: bold;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2.98px;
+      color: $azure-dark;
+    }
+
+    input {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 42px;
+      border: none;
+      border-bottom: solid 1px $border-grey;
+    }
+
+    .CheckboxLabel{
+      margin-bottom: 59px;
+    }
+    .sendButton {
+      width: 226px;
+      height: 57px;
+      border: 0 solid;
+      align-self: flex-end;
+      border-radius: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 104px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+      background-color: $azure-light;
+    }
+  }
+}

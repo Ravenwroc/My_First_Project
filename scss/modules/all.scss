@@ -1,0 +1,74 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1352px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-size: 49px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+
+
+
+//Checkbox style
+
+.CheckboxLabel {
+  cursor: pointer;
+  margin-bottom: 15px;
+  padding-left: 34px;
+  position: relative;
+  font-size: 12px;
+
+  .customCheckbox {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: solid 1px $border-grey;
+    border-radius: 4px;
+    background-color: white;
+    &:after {
+      display: none;
+      content: "";
+      position: absolute;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .Checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .customCheckbox:after{
+      display: block;
+      height: 24px;
+      width: 24px;
+      background-image: url("../images/icons/Checkmark.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+//input custom style
+

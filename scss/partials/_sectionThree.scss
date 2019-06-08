@@ -1,0 +1,172 @@
+.sectionThree {
+  margin-bottom: 155px;
+
+  h3 {
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 14px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1266px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.priceList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .cash {
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 12px;
+    font-family: Raleway, serif;
+    font-weight: bold;
+  }
+
+  .priceListLeft {
+    width: 372px;
+    border: 1px solid $watermelon;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 73px;
+    padding-top: 34px;
+
+    .cash {
+      color: $darkish-pink;
+      font-size: 46px;
+
+      &.One {
+        margin-bottom: 69px;
+      }
+    }
+  }
+
+  .priceListMiddle {
+    width: 405px;
+    border: 1px solid $azure-two;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $aqua-shadowBig;
+    position: relative;
+    padding-bottom: 79px;
+    padding-top: 34px;
+
+    .cash {
+      color: $azure-light;
+      font-size: 46px;
+    }
+  }
+
+  .priceListRight {
+    width: 372px;
+    border: 1px solid $aqua-marine;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 73px;
+    padding-top: 34px;
+
+    .cash {
+      color: $aqua-marine;
+      font-size: 46px;
+    }
+  }
+}
+
+
+.o1 {
+  margin-bottom: 80px;
+}
+
+.o2 {
+  margin-bottom: 66px;
+}
+
+.orderOptions {
+  font-size: 14px;
+  font-family: "Open Sans", serif;
+  margin-bottom: 25px;
+  position: relative;
+
+  &.checkmark:before {
+    background-image: url("../images/icons/Ckechmark-1.svg");
+    width: 11px;
+    height: 11px;
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 3px;
+  }
+
+  &.close:before {
+    background-image: url("../images/icons/Close.svg");
+    width: 11px;
+    height: 11px;
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 3px;
+  }
+}
+
+
+.order.button {
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+
+  &.left {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    background-color: $darkish-pink;
+  }
+
+  &.middle {
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    box-shadow: $aqua-shadow-Mid;
+    background-color: $azure-light;
+  }
+
+  &.right {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    background-color: $aqua-marine;
+  }
+}

@@ -1,0 +1,73 @@
+nav {
+  width: 100%;
+  box-shadow: $grey-shadow;
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+
+
+  }
+
+  .logoWord {
+    color: $azure-dark;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    width: auto;
+    margin: 0;
+  }
+
+  .menuList {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+
+    li {
+      list-style: none;
+      margin-right: 100px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2.98px;
+        color: $greyish;
+        font-size: 11px;
+        position: relative;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        &:hover {
+          color: $black;
+        }
+      }
+      &:hover::after {
+        content: "";
+        width: 83.9px;
+        height: 4px;
+        bottom: 0;
+        position: absolute;
+        background-position: bottom;
+        background-color: $azure-light;
+      }
+    }
+  }
+}
