@@ -1,4 +1,4 @@
-.none{
+.none {
   display: none;
 }
 
@@ -52,8 +52,13 @@
           margin-bottom: 20px;
         }
 
+        #selectPackage {
+          cursor: pointer;
+        }
+
         .selectPackageSelectorMain {
           position: relative;
+
           .selectPackageSelectorDown, .selectPackageSelectorUp {
             position: absolute;
             width: 21px;
@@ -67,14 +72,16 @@
             background-color: white;
             cursor: pointer;
           }
+
           .selectPackageSelectorDown {
             background-image: url("../images/icons/ArrowDown.svg");
           }
+
           .selectPackageSelectorUp {
             background-image: url("../images/icons/ArrowUp.svg");
           }
-
         }
+
         .calculatorFormSelect {
           list-style-type: none;
           position: absolute;
@@ -85,7 +92,7 @@
           border: 1px solid $darkish-pink;
           border-radius: 6px;
           box-shadow: $darkish-pink-shadow;
-          top: 180px;
+          top: 170px;
           left: 0;
           z-index: 1;
 
@@ -93,16 +100,17 @@
             margin-bottom: 10px;
             font-size: 13px;
             padding: 5px;
-            &:hover{
+
+            &:hover {
               transition: 0.3s ease;
               cursor: pointer;
               content: "";
               width: 100%;
-              height: 100%;
               background-color: $darkish-pink;
             }
           }
-          li:last-child{
+
+          li:last-child {
             margin-bottom: 0;
           }
         }
@@ -125,10 +133,27 @@
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          flex-wrap: nowrap;
           box-shadow: $grey-shadow;
           color: white;
 
+        }
 
+        span {
+          flex-basis: 33.333333%;
+        }
+
+
+        .productsPrice, .ordersPrice, .package {
+          text-align: center;
+        }
+
+        span:last-child {
+          width: 2.0em;
+          text-align: right;
+          font-size: 18px;
+          font-weight: bold;
+          transform: translateY(-1px);
         }
 
         .sumPriceBar {
@@ -147,11 +172,9 @@
           color: white;
           padding: 6px 20px 6px 20px;
           align-self: flex-end;
-        }
-        span:last-child {
-          font-size: 18px;
-          font-weight: bold;
-          transform: translateY(-1px);
+          span {
+            flex-basis: 50%;
+          }
         }
       }
     }

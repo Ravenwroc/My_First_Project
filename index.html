@@ -138,10 +138,10 @@
         <div class="calculatorElements">
             <div class="calculatorElementsLeft">
                 <form class="calculatorForm">
-                    <label><input name="productsQuantity" id="productsQuantity" placeholder="Ilość produktów" type="text"></label>
+                    <label><input name="productsQuantity" id="productsQuantity" placeholder="Ilość produktów" type="number"></label>
                     <label><input name="orderQuantity" id="orderQuantity" placeholder="Szacowana ilość zamówień w miesiącu"
-                           type="text"></label>
-                    <label><input name="selectPackage" id="selectPackage" placeholder="Wybierz pakiet" type="text"></label>
+                           type="number"></label>
+                    <label><input name="selectPackage" id="selectPackage" placeholder="Wybierz pakiet" type="text" readonly></label>
                     <div class="selectPackageSelectorMain">
                         <label> <input name="selectPackageSelectorDown" class="selectPackageSelectorDown" id="selectPackageSelectorDown" placeholder="" type="button"></label>
                             <label><input name="selectPackageSelectorUp" class="selectPackageSelectorUp none" id="selectPackageSelectorUp" placeholder="" type="button"></label>
@@ -151,10 +151,10 @@
                         <li class="pro">Profesjonalny</li>
                         <li class="premium">Premium</li>
                     </ul>
-                    <label class="CheckboxLabel"><input type="checkbox" class="Checkbox" checked>Obsługa księgowa<span
+                    <label class="CheckboxLabel"><input type="checkbox" class="accountingService Checkbox" checked>Obsługa księgowa<span
                             class="customCheckbox"></span>
                     </label>
-                    <label class="CheckboxLabel"><input type="checkbox" class="Checkbox" checked>Wynajem terminala
+                    <label class="CheckboxLabel"><input type="checkbox" class="terminal Checkbox" checked>Wynajem terminala
                         płatniczego<span class="customCheckbox"></span>
                     </label>
                 </form>
@@ -162,30 +162,30 @@
             <div class="calculatorElementsRight">
                 <div class="priceBar">
                     <span>Produkty</span>
-                    <span id="productsPrice"></span>
-                    <span id="productsSum"></span>
+                    <span class="productsPrice"></span>
+                    <span class="productsSum"></span>
                 </div>
                 <div class="priceBar">
                     <span>Zamówienia</span>
-                    <span id="ordersPrice"></span>
-                    <span id="ordersSum"></span>
+                    <span class="ordersPrice"></span>
+                    <span class="ordersSum"></span>
                 </div>
                 <div class="priceBar">
                     <span>Pakiet</span>
-                    <span id="package"></span>
-                    <span id="packagePrice"></span>
+                    <span class="package"></span>
+                    <span class="packagePrice"></span>
                 </div>
                 <div class="priceBar">
-                    <span>Ksiegowość</span>
-                    <span>$35</span>
+                    <span class="accountingInfo">Ksiegowość</span>
+                    <span class="accountingPrice">$35</span>
                 </div>
                 <div class="priceBar">
-                    <span>Terminal</span>
-                    <span>$5</span>
+                    <span class="terminalInfo">Terminal</span>
+                    <span class="terminalPrice">$5</span>
                 </div>
                 <div class="sumPriceBar">
-                    <span>Suma</span>
-                    <span id="priceSum">$0</span>
+                    <span class="sumInfo">Suma</span>
+                    <span class="priceSum">$0</span>
                 </div>
             </div>
         </div>
