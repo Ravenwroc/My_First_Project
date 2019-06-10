@@ -19,14 +19,11 @@ nav {
       margin: 0;
     }
     .menuList {
-      display: none;
+      display: flex;
+      flex-direction: row;
+      height: 70px;
       flex-direction: row;
       font-family: "Open Sans", sans-serif;
-      @media screen and (min-width: 1024px) {
-        display: flex;
-        flex-direction: row;
-        height: 70px;
-      }
       li {
         list-style: none;
         margin-right: 100px;
