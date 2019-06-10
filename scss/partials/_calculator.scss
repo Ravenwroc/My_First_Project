@@ -74,11 +74,12 @@
           }
 
           .selectPackageSelectorDown {
-            background-image: url("../images/icons/ArrowDown.svg");
+            background-image: url("/images/icons/Arrow.svg");
           }
 
           .selectPackageSelectorUp {
-            background-image: url("../images/icons/ArrowUp.svg");
+            background-image: url("/images/icons/Arrow.svg");
+            transform: rotate(180deg);
           }
         }
 

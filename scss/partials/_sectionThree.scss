@@ -115,7 +115,7 @@
   position: relative;
 
   &.checkmark:before {
-    background-image: url("../images/icons/Ckechmark-1.svg");
+    background-image: url("/images/icons/Ckechmark-1.svg");
     width: 11px;
     height: 11px;
     content: "";
@@ -125,7 +125,7 @@
   }
 
   &.close:before {
-    background-image: url("../images/icons/Close.svg");
+    background-image: url("/images/icons/Close.svg");
     width: 11px;
     height: 11px;
     content: "";

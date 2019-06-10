@@ -2,12 +2,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-  width: 100%;
-  max-width: 1352px;
-  margin: 0 auto;
-}
-
 h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
 }
@@ -19,6 +13,16 @@ h2 {
 h3 {
   font-size: 36px;
   font-weight: normal;
+}
+.container {
+    width: 100%;
+    margin: 0 30px 0 30px;
+  @media screen and (min-width:1024px) {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1352px;
+  }
 }
 
 
@@ -63,12 +67,9 @@ h3 {
       display: block;
       height: 24px;
       width: 24px;
-      background-image: url("../images/icons/Checkmark.svg");
+      background-image: url("/images/icons/Checkmark.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
   }
 }
-
-//input custom style
-
