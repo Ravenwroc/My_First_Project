@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 226px;
+  padding-bottom: 226px;
+  padding-top: 100px;
+  box-shadow: $grey-shadow3;
 
   h3 {
     margin-bottom: 100px;
-    align-self: center;
+    text-align: center;
   }
 
   .content {
@@ -16,62 +18,81 @@
     align-items: center;
     position: relative;
 
-    div {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+
+      .sectionOneComponent1 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:before {
+          content: "";
+          width: 63px;
+          height: 63px;
+          position: absolute;
+          background-color: $watermelon;
+          border-radius: 50%;
+        }
+      }
+
+      .sectionOneComponent2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:before {
+          content: "";
+          width: 63px;
+          height: 63px;
+          position: absolute;
+          background-color: $azure-dark;
+          border-radius: 50%;
+        }
+      }
+
+      .sectionOneComponent3 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:before {
+          content: "";
+          width: 63px;
+          height: 63px;
+          position: absolute;
+          background-color: $aqua-marine;
+          border-radius: 50%;
+        }
+      }
+    }
+    img {
       position: relative;
+      align-self: center;
+      left: 15%;
       width: 63px;
       height: 63px;
-      border-radius: 50%;
-
-      &:nth-of-type(1) {
-        background-color: $watermelon;
-      }
-
-      &:nth-of-type(2) {
-        background-color: $azure-dark;
-      }
-
-      &:nth-of-type(3) {
-        background-color: $aqua-marine;
-      }
     }
 
-    img {
-      position: absolute;
-      left: 31px;
-      top: 6px;
-      display: flex;
-    }
-
-    div:nth-of-type(2) img {
-      top: 12px;
-    }
 
     p {
-      position: absolute;
+      align-self: center;
+      position: relative;
       font-family: "Raleway", serif;
 
       &:nth-of-type(1) {
-        top: 66px;
+        margin-top: 14px;
+        text-align: center;
         font-size: 20px;
         font-weight: 900;
         letter-spacing: 5px;
       }
 
       &:nth-of-type(2) {
-        top: 119px;
+        margin-top: 19px;
         font-size: 17px;
         text-align: center;
         color: $greyish;
-        box-sizing: content-box;
         width: 168px;
         word-break: normal;
       }
     }
   }
-
-
-}

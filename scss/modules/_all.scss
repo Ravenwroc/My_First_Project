@@ -1,7 +1,11 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1352px;
+}
 h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
 }
@@ -14,11 +18,7 @@ h3 {
   font-size: 36px;
   font-weight: normal;
 }
-.container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1352px;
-}
+
 
 
 
@@ -27,7 +27,6 @@ h3 {
 
 .CheckboxLabel {
   cursor: pointer;
-  margin-bottom: 15px;
   padding-left: 34px;
   position: relative;
   font-size: 12px;
@@ -35,7 +34,7 @@ h3 {
   .customCheckbox {
     position: absolute;
     content: "";
-    top: 0;
+    top: -4px;
     left: 0;
     height: 24px;
     width: 24px;

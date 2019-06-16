@@ -37,7 +37,7 @@
         position: relative;
 
         .CheckboxLabel:nth-of-type(1) {
-          margin-bottom: 20px;
+          margin-bottom: 27px;
         }
 
         input {
@@ -114,6 +114,11 @@
           li:last-child {
             margin-bottom: 0;
           }
+        }
+        .calculatorCheckboxes{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
       }
 

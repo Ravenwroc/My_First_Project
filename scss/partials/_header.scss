@@ -8,18 +8,17 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .headerBackground{
-      width: 100%;
-      height: 0;
-      padding-top: 34.23%; /* (img-height / img-width ) */
-                  /* (594 / 1735) */
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: bottom;       
-      background-image: url("../images/Background.png");
-    }
   }
-
+  .headerBackground{
+    max-width: 100%;
+    height: 0;
+    padding-top: 34.23%; /* (img-height / img-width ) */
+    /* (594 / 1735) */
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url("../images/Background.png");
+  }
   h2 {
     margin-bottom: 20px;
   }
