@@ -23,9 +23,7 @@ nav {
     }
     .menuList {
       display: flex;
-      flex-direction: row;
       height: 70px;
-      flex-direction: row;
       font-family: "Open Sans", sans-serif;
       li {
         list-style: none;
@@ -56,6 +54,7 @@ nav {
   
           &:hover {
             color: $black;
+            z-index: 1;
           }
         }
         &:hover::after {

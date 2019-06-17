@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title>My First Project</title>
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -272,20 +273,20 @@
                 >
             </div>
         </div>
-        <div class="lastSection_right">
+        <form class="lastSection_right" action="#" target="_self" method="get">
             <label class="nameLabel"
-            >Imię i nazwisko <input type="text" value="" placeholder=""/>
+            >Imię i nazwisko <input class="lastSection_name" type="text" value="" placeholder="" required minlength="6" maxlength="50" name="username"/>
             </label>
             <label class="mailLabel"
-            >E-mail <input type="text" value="" placeholder=""/>
+            >E-mail <input class="lastSection_mail" type="email" value="" placeholder="" required minlength="4" maxlength="50" name="useremail"/>
             </label>
 
             <label class="CheckboxLabel"
-            ><input type="checkbox" class="Checkbox" checked/>Wyrażam zgodę na
+            ><input type="checkbox" class="Checkbox" checked required name="checkpermission" />Wyrażam zgodę na
                 przetwarzanie danych i kontakt.<span class="customCheckbox"></span>
             </label>
-            <a href="#" class="sendButton">Wyślij</a>
-        </div>
+            <input  class="sendButton" name="submitbutton" svalue="Wyślij" type="submit"/></input>
+        </form>
     </div>
 </section>
 <footer>

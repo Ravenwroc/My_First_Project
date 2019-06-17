@@ -6,6 +6,7 @@
   padding-top: 100px;
   box-shadow: $grey-shadow3;
 
+
   h3 {
     margin-bottom: 100px;
     text-align: center;
@@ -15,8 +16,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     position: relative;
+    flex-wrap: wrap;
 
 
       .sectionOneComponent1 {

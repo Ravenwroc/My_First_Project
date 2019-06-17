@@ -60,7 +60,8 @@
     align-items: flex-start;
     width: 440px;
 
-    .nameLabel {
+    .nameLabel, .mailLabel{
+      width: 100%;
       font-family: "Open Sans", serif;
       font-weight: bold;
       font-size: 11px;
@@ -69,16 +70,8 @@
       color: $azure-dark;
     }
 
-    .mailLabel {
-      font-family: "Open Sans", serif;
-      font-weight: bold;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 2.98px;
-      color: $azure-dark;
-    }
 
-    input {
+    .lastSection_name, .lastSection_mail {
       width: 100%;
       margin-top: 10px;
       margin-bottom: 42px;
@@ -104,6 +97,9 @@
       font-weight: bold;
       box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
       background-color: $azure-light;
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
 }
