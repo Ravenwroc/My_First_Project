@@ -20,7 +20,19 @@ You can use automatic calculator to count how much you pay for the services. You
 # Demo
 You can view the page deployment by clicking here: [Shop-ABC](https://ravenwroc.github.io/Shop-ABC/).
 
+## Folder Structure
+```
+.
+  | - css/      
+  | - images/  
+  | - js/
+       
+  | - scss/
+    | - modules/   
+    | - partials/   
+  | - index.html  
 
+```
 ## Authors
 
 * **[Marcin Guzek](https://github.com/Ravenwroc/)** - Code of the project.
