@@ -15,6 +15,7 @@ Internet shop landing page with services calculator. Created for the purposes of
 ![screenshot](https://i.imgur.com/sVCqZTd.jpg)
 
 # Features
+### Live calculator application
 You can use live calculator to count how much you pay for the services. You only must fill the form.
 
 # Demo
