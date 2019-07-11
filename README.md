@@ -1,10 +1,11 @@
 # Shop-ABC
 Internet shop landing page with services calculator. Created for the purposes of the CodersLab course as my first project.
+![https://github.com/Ravenwroc/Shop-ABC](https://img.shields.io/github/release-date/Ravenwroc/Shop-ABC.svg)
 
 # Demo
 You can view the page deployment by clicking here: [Shop-ABC](https://ravenwroc.github.io/Shop-ABC/).
 
-![https://github.com/Ravenwroc/Shop-ABC](https://img.shields.io/github/release-date/Ravenwroc/Shop-ABC.svg)
+
 
 # Technologies and tools
 * HTML5
